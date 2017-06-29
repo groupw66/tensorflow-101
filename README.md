@@ -24,3 +24,9 @@ To deactivate environment
 ```bash
 $ source deactivate
 ```
+
+Problem with installation matplotlib on MacOS (it will throw you some errors mention matplotlib)
+```bash
+$ cd ~/.matplotlib
+$ echo 'backend: TkAgg' >> matplotlibrc
+```
