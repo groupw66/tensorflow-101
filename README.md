@@ -8,8 +8,19 @@ Learning by playing with http://playground.tensorflow.org/
 
 For macOS you can run this script after install Anaconda
 ```bash
-conda create -n tensorflow --yes
-source activate tensorflow
-yes | pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.2.0-py3-none-any.whl
-yes | pip install --ignore-installed --upgrade matplotlib
+$ conda create -n tensorflow --yes
+$ source activate tensorflow
+$ yes | pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-1.2.0-py3-none-any.whl
+$ yes | pip install --ignore-installed --upgrade matplotlib
+
+#test
+(tensorflow) $ python
+>>> import tensorflow
+>>> tensorflow.__version__
+<output current tensorflow version>
+```
+
+To deactivate environment
+```bash
+$ source deactivate
 ```
